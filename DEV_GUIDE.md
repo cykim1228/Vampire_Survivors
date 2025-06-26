@@ -15,7 +15,7 @@
 ### 1. 기본 개발 흐름
 
 ```
-1) 골드메탈 강의 보며 코드 수정
+1) 코드 수정
    ↓
 2) GitHub Desktop에서 Changes 확인
    ↓
@@ -179,7 +179,3 @@ feature/weapon-system     # 무기 관련 기능들
 - **PR 생성 전 Unity에서 테스트**
 
 ---
-
-**Happy Coding! 🎮✨**
-
-*GitHub Desktop과 CodeRabbit을 활용한 간단하고 효율적인 개발 환경으로 골드메탈 강의를 즐겁게 진행하세요!* 
