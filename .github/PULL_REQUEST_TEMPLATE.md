@@ -40,21 +40,21 @@
 ## ✅ 체크리스트 (Checklist)
 
 ### 코드 품질 (Code Quality)
-- [ ] Cursor AI 규칙 준수
-- [ ] Unity 코딩 컨벤션 준수
-- [ ] 적절한 주석 추가
-- [ ] null 체크 및 예외 처리
-- [ ] SerializeField 적절히 사용
+- [x] Cursor AI 규칙 준수
+- [x] Unity 코딩 컨벤션 준수
+- [x] 적절한 주석 추가
+- [x] null 체크 및 예외 처리
+- [x] SerializeField 적절히 사용
 
 ### 성능 (Performance)
-- [ ] 메모리 할당 최적화
-- [ ] Update 메서드 최적화
-- [ ] GetComponent 호출 최소화
+- [x] 메모리 할당 최적화
+- [x] Update 메서드 최적화
+- [x] GetComponent 호출 최소화
 
 ### 문서화 (Documentation)
-- [ ] XML 문서 주석 추가
-- [ ] README 업데이트 (필요시)
-- [ ] API 문서 업데이트 (필요시)
+- [x] XML 문서 주석 추가
+- [x] README 업데이트 (필요시)
+- [x] API 문서 업데이트 (필요시)
 
 ## 🤖 CodeRabbit 리뷰 (CodeRabbit Review)
 
@@ -64,7 +64,7 @@
 
 ## 📚 참고 자료 (References)
 
-- [골드메탈 유튜브 강의](https://youtu.be/YAu4yWU5D5U?si=-QZ6hv3rZ_Ku1FDo)
+- [골드메탈 유튜브 강의](https://www.youtube.com/playlist?list=PLO-mt5Iu5TeZF8xMHqtT_DhAPKmjF6i3x)
 - Unity 문서: 
 - 기타 참고 자료:
 
