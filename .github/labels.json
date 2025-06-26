@@ -1,0 +1,62 @@
+[
+    {
+        "name": "⚙ Setting",
+        "color": "e3dede",
+        "description": "개발 환경 세팅"
+    },
+    {
+        "name": "✨ Feature",
+        "color": "a2eeef",
+        "description": "새로운 기능 개발"
+    },
+    {
+        "name": "🎮 Gameplay",
+        "color": "C2E0C6",
+        "description": "게임플레이 로직"
+    },
+    {
+        "name": "🎨 Graphics",
+        "color": "FEF2C0",
+        "description": "그래픽 & UI 관련"
+    },
+    {
+        "name": "🐞 BugFix",
+        "color": "d73a4a",
+        "description": "버그 수정"
+    },
+    {
+        "name": "🔊 Audio",
+        "color": "C5DEF5",
+        "description": "사운드 & 음악"
+    },
+    {
+        "name": "📃 Docs",
+        "color": "1D76DB",
+        "description": "문서 작성 및 수정"
+    },
+    {
+        "name": "🏗 Animation",
+        "color": "D4C5F9",
+        "description": "애니메이션 관련"
+    },
+    {
+        "name": "🔨 Refactor",
+        "color": "f29a4e",
+        "description": "코드 리팩토링"
+    },
+    {
+        "name": "🙋‍♂️ Question",
+        "color": "9ED447",
+        "description": "질문 및 토론"
+    },
+    {
+        "name": "⚡ Performance",
+        "color": "facfcf",
+        "description": "성능 최적화"
+    },
+    {
+        "name": "✅ Test",
+        "color": "ccffc4",
+        "description": "테스트 관련"
+    }
+] 
