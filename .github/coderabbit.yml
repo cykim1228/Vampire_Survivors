@@ -1,0 +1,159 @@
+# CodeRabbit Configuration for Unity Game Development
+# 유니티 게임 개발을 위한 CodeRabbit 설정 (형상관리 전용)
+
+# Review 설정
+reviews:
+  # 자동 리뷰 활성화
+  auto_review: true
+  
+  # 리뷰 요약 생성
+  review_summary: true
+  
+  # 모든 PR에 대해 리뷰 수행
+  review_all: true
+  
+  # 리뷰 언어 설정 (한국어/영어 혼용)
+  language: ["ko", "en"]
+
+# 파일 필터링
+path_filters:
+  # Unity 관련 파일들만 리뷰 대상으로 설정
+  include:
+    - "Assets/Scripts/**/*.cs"
+    - "Assets/Editor/**/*.cs"
+    - "Assets/Tests/**/*.cs"
+    - "*.md"
+    - "*.yml"
+    - "*.yaml"
+    - "*.json"
+  
+  # 제외할 파일들
+  exclude:
+    - "Library/**"
+    - "Temp/**"
+    - "Logs/**"
+    - "obj/**"
+    - "*.meta"
+    - "*.asset"
+    - "*.prefab"
+    - "*.unity"
+    - "*.dll"
+
+# 리뷰 규칙
+rules:
+  # Unity 특화 규칙
+  unity:
+    # MonoBehaviour 관련 검사
+    - check_monobehaviour_usage
+    - check_serialized_fields
+    - check_unity_lifecycle_methods
+    
+    # 성능 관련 검사
+    - check_update_method_optimization
+    - check_memory_allocation
+    - check_object_pooling_usage
+    
+    # 코딩 컨벤션 검사
+    - check_naming_conventions
+    - check_code_organization
+    - check_comment_quality
+
+  # 일반 C# 규칙
+  csharp:
+    - check_null_reference_safety
+    - check_exception_handling
+    - check_async_await_usage
+    - check_linq_performance
+    - check_string_operations
+
+  # 아키텍처 규칙
+  architecture:
+    - check_solid_principles
+    - check_dependency_injection
+    - check_design_patterns
+    - check_separation_of_concerns
+
+# 리뷰 품질 설정
+quality:
+  # 상세한 피드백 제공
+  detailed_feedback: true
+  
+  # 코드 예제 포함
+  include_examples: true
+  
+  # 개선 제안 포함
+  include_suggestions: true
+  
+  # 성능 분석 포함
+  performance_analysis: true
+
+# 알림 설정
+notifications:
+  # 중요한 이슈만 알림
+  critical_issues_only: false
+  
+  # 리뷰 완료 시 알림
+  on_review_complete: true
+  
+  # 새로운 커밋 시 자동 리뷰
+  on_new_commits: true
+
+# 커스텀 체크리스트
+checklist:
+  # Unity 특화 체크리스트
+  unity_checklist:
+    - "MonoBehaviour 라이프사이클 메서드가 올바르게 사용되었나요?"
+    - "SerializeField가 public 변수 대신 적절히 사용되었나요?"
+    - "GetComponent 호출이 최적화되었나요?"
+    - "메모리 할당이 최소화되었나요?"
+    - "Object Pooling이 필요한 곳에 적용되었나요?"
+    - "Unity 코딩 컨벤션을 준수했나요?"
+  
+  # 일반 코드 품질 체크리스트
+  code_quality:
+    - "코드가 읽기 쉽고 이해하기 쉬운가요?"
+    - "적절한 주석이 포함되어 있나요?"
+    - "에러 처리가 적절히 구현되었나요?"
+    - "테스트 코드가 포함되어 있나요?"
+    - "SOLID 원칙을 준수했나요?"
+
+# 리뷰어 멘션 설정
+mentions:
+  # 특정 파일 변경 시 멘션할 사용자들
+  file_patterns:
+    "Assets/Scripts/Player/**": ["@lead-programmer"]
+    "Assets/Scripts/Managers/**": ["@architect"]
+    "Assets/Scripts/UI/**": ["@ui-developer"]
+    "**/Tests/**": ["@qa-engineer"]
+
+# 리뷰 템플릿
+templates:
+  # PR 리뷰 템플릿
+  pr_review: |
+    ## 🎮 Unity Game Development Review
+    
+    ### 📋 리뷰 요약 (Review Summary)
+    {summary}
+    
+    ### 🔍 주요 발견사항 (Key Findings)
+    {key_findings}
+    
+    ### 🚀 성능 분석 (Performance Analysis)
+    {performance_analysis}
+    
+    ### 💡 개선 제안 (Improvement Suggestions)
+    {suggestions}
+    
+    ### ✅ Unity 모범 사례 준수 (Unity Best Practices)
+    {unity_best_practices}
+
+# 통합 설정
+integrations:
+  # GitHub Actions와 연동 (CI/CD 미사용으로 비활성화)
+  github_actions: false
+  
+  # 기타 CI/CD 도구와 연동
+  unity_cloud_build: false
+  
+  # Slack 알림 (옵션)
+  slack_notifications: false 
