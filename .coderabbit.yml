@@ -1,0 +1,19 @@
+# CodeRabbit Configuration
+language: ko
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: true
+  review_status: true
+  collapse_empty_files: true
+  auto_review:
+    enabled: true
+    ignore_title_keywords:
+      - "WIP"
+      - "DO NOT MERGE"
+    drafts: false
+    base_branches:
+      - "/*"
+chat:
+  auto_reply: true 
